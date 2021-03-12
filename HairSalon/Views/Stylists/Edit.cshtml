@@ -1,12 +1,10 @@
 @{
   Layout = "_Layout";
 }
-
 @model HairSalon.Models.Stylist;
 
 <h2>Edit</h2>
-
-<h4>Edit this stylist: @Html.DisplayFor(model => model.Name)</h4>
+<h3>Edit this stylist: @Html.DisplayFor(model => model.Name)</h4>
 
 @using (Html.BeginForm())
 {
@@ -17,4 +15,5 @@
   @Html.EditorFor(model => model.Specialty);
   <input type="submit" value="Save"/>
 }
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
 <p>@Html.ActionLink("Back to Stylists", "Index")</p>
