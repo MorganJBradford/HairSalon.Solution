@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+@using HairSalon.Models;
+@model List<HairSalon.Models.Client>;
+
+<h1>Clients</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No clients have been added! Better hire a marketing team.</h3>
+}
+
+@foreach (Client client in Model)
+{
+  <p>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId }) | @client.Stylist.Name</p>
+}
+
+<p>@Html.ActionLink("Add a new client", "Create")</p>
