@@ -23,6 +23,8 @@ namespace HairSalon.Controllers
 
     public ActionResult Create()
     {
+      List<Stylist> stylists = _db.Stylists.ToList();
+      ViewBag.Stylists = stylists;
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
