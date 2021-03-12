@@ -1,5 +1,8 @@
 using HairSalon.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace HairSalon.Controllers
 {
@@ -10,6 +13,12 @@ namespace HairSalon.Controllers
     public StylistsController(HairSalonContext db)
     {
       _db = db;
+    }
+
+    public ActionResult Index()
+    {
+      List<Stylist> model = _db.Stylists.ToList();
+      return View(model);
     }
   }
 }
