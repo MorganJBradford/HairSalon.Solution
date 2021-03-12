@@ -1,5 +1,5 @@
-## <div align="center">Pierre's Vender and Order Tracker</div>
-#### <div align="center"> *A website created for tracking business vendors and orders* </div> 
+## <div align="center">Eac Claire's Salon</div>
+#### <div align="center"> *A website created for tracking employees and their clients* </div> 
 ***<p align="right">Morgan Bradford***</p>   
 <p align="center">
 <br>
@@ -10,32 +10,32 @@
 
 ___
 ## 🚩 *Description*:    
-### *Use this website to create and store a list a vendors your business has relationships with, as well as orders that your vendors have ordered. This website will allow you to view vendors(name, description) and order details (title, description, cost, date/time of order) of those entered.*
+### *Use this website to create and store a list a your business' employees(name, specialty), as well each employee's clients(name). This website will allow employers to keep track of their current employees and cliental.*
 
 
 ## 🔧 *Setup/Installation instructions:*
 #### 🌐 From the web:
-* Go to my GitHub repository, using following [URL](https://github.com/MorganJBradford/PierresTracker.Solution.git).
+* Go to my GitHub repository, using following [URL](https://github.com/MorganJBradford/HairSalon.Solution.git).
 * Click the "Code" <img src="README-files/download-button.png" alt="code button" height="20" align="center"/> and click the 'Download zip' option ![img](README-files/Capture.JPG).
 * Unzip the file, navigate to the `Models` directory to check code or to the `ModelTests` directory to see tests.
 #### ⚙️ From the terminal: 
-* Clone my repository from GitHub using `git clone https://github.com/MorganJBradford/PierresTracker.Solution.git` in your terminal or GitBash
+* Clone my repository from GitHub using `git clone https://github.com/MorganJBradford/HairSalon.Solution.git` in your terminal or GitBash
 * Navigate to the downloaded folder using ***cd*** command
 * Execute **code .** command in your terminal and it will open all source code in your code editor.    
 ⚠️ *Note: To run this project locally you will need to have .NET Core. You can check if you have .NET Core by running dotnet --version in the command line. If you do not have .NET Core please find more information and download [here](https://dotnet.microsoft.com/download/dotnet)*
 
 #### 🏁 Running Tests:
-* To run MS tests you will need to navigate to the `PierresTracker.Tests` folder *(cd PierresTracker.Tests)* in the command line and then run `dotnet restore`.
-* You should now see **'obj'** folders in both the `PierresTracker.Tests` folder and `PierresTracker` folder.
-* At this point you should be able to successfully run `dotnet test` in the command line (keep in mind you should still be in the PierresTracker.Tests folder).
+* To run MS tests you will need to navigate to the `HairSalon.Tests` folder *(cd HairSalon.Tests)* in the command line and then run `dotnet restore`.
+* You should now see **'obj'** folders in both the `HairSalon.Tests` folder and `HairSalon` folder.
+* At this point you should be able to successfully run `dotnet test` in the command line (keep in mind you should still be in the HairSalon.Tests folder).
 
 ####  🖥️ View website:
-* From the top level directory enter 'cd PierresTracker' in the command line.
+* From the top level directory enter 'cd HairSalon' in the command line.
 * Run the command 'dotnet restore' to download dependencies required to run the project.
 * Next, enter 'dotnet run' the in command line. You should a message similar to the following populate in your terminal:
 
 > Hosting environment: Production
-> Content root path: C:\Users\vampi\OneDrive\Desktop\epicodus\PierresTracker.Solution\PierresTracker
+> Content root path: C:\Users\vampi\OneDrive\Desktop\epicodus\HairSalon.Solution\HairSalon
 > Now listening on: http://localhost:5000
 > Now listening on: https://localhost:5001
 > Application started. Press Ctrl+C to shut down.
