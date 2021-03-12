@@ -4,7 +4,7 @@
 
 @model HairSalon.Models.Client;
 
-@if(ViewBag.Stylists.Count < 1)
+@if (ViewBag.Stylists.Count < 1)
 {
   <h2>There are no stylists to connect a client yet.</h2>
   @Html.ActionLink("Add a stylist", "Create", "Stylist");
