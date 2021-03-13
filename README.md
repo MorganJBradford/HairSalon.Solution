@@ -24,10 +24,6 @@ ___
 * Execute **code .** command in your terminal and it will open all source code in your code editor.    
 ⚠️ *Note: To run this project locally you will need to have .NET Core. You can check if you have .NET Core by running dotnet --version in the command line. If you do not have .NET Core please find more information and download [here](https://dotnet.microsoft.com/download/dotnet)*
 
-#### 🏁 Running Tests:
-* To run MS tests you will need to navigate to the `HairSalon.Tests` folder *(cd HairSalon.Tests)* in the command line and then run `dotnet restore`.
-* You should now see **'obj'** folders in both the `HairSalon.Tests` folder and `HairSalon` folder.
-* At this point you should be able to successfully run `dotnet test` in the command line (keep in mind you should still be in the HairSalon.Tests folder).
 
 ####  🖥️ View website:
 * From the top level directory enter 'cd HairSalon' in the command line.
@@ -46,12 +42,13 @@ ___
 * C# 9
 * .NET Core v5.0
 * ASP.NET Core MVC
-* MSTest
+* Entity
+* MySQL Workbench 8.0 CE
 * REPL
 * Git and GitHub
 
 ## 🐛 *Known bugs:*
-* Vendor delete buttons: only works when you delete the last vendor on the list.
+* No known bugs at this time.
 * You you find any bugs, _please_ contact me via my email below.
 
 ## 📬 Contact Information
