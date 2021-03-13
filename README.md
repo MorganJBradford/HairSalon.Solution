@@ -51,13 +51,11 @@ ___
 
 If you are using a server other than the default server, you will need to change the Port number. Otherwise, we will update the code to put in our database information and password. Replace "\[database_name]" with the "hair_salon" and "\[password]" with your password. **Again this is private and should be included in a .gitignore.** The final result should look like the following:
 
-``
-{
+``{
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=hair_salon;uid=root;pwd=mydbpassword;"
   }
-}
-``
+}``
 
 3. Run Application
 
