@@ -26,6 +26,17 @@ ___
 
 
 ####  🖥️ View website:
+
+## Create Database with MySQL Workbench:
+
+* Open MySql, navigate to the administration tab (circled in the photo below), then double click on "Data Import/Restore" (see arrow in photo):
+![img](README-files/admin-tab.JPG)
+
+* A page called Data Import will open on MySQL Workbench. For _Import options_ select "Import from Self-Contained file", then select the file labeled "salon_db_structure.sql". This file will be in the top level of this projects directory. Next, in the _Default Schema to be Imported_ click the button "New...", you may name your scheme as you prefer, for the purposes of instruction mine is labeled hair_salon. When your view resembles the image below, select "Start Import" (circled in the photo below):
+![img](README-files/select-file.JPG)
+
+## Connect Database to HairSalon.Solution
+
 * From the top level directory enter 'cd HairSalon' in the command line.
 * Run the command 'dotnet restore' to download dependencies required to run the project.
 * Next, enter 'dotnet run' the in command line. You should a message similar to the following populate in your terminal:
