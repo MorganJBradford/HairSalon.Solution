@@ -37,6 +37,22 @@ ___
 
 ## Connect Database to HairSalon.Solution
 
+* Create a file named "appsettings.json" in the top level of the production directory 'HairSalon.Solution/HairSalon'. 
+**Uploading to your own repository**: If "appsettings.json" is is not grayed out like in the image below, you may need to commit the .gitignore file included in this project first. If using vscode and "appsettings.json" is not grayed out like in the photo below **do not upload your project**
+![img](README-files/appsettings.JPG)
+
+* Navigate to your appsettings.json and paste the following template code:
+
+```{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=[database_name];uid=root;pwd=[password];"
+  }
+}```
+
+If you are using a server other than the default server, you will need to change the Port number. Otherwise, we will update the code to put in our database information and password. Replace [database_name] Again this is private and should be included in a .gitignore.
+
+## Run Application
+
 * From the top level directory enter 'cd HairSalon' in the command line.
 * Run the command 'dotnet restore' to download dependencies required to run the project.
 * Next, enter 'dotnet run' the in command line. You should a message similar to the following populate in your terminal:
