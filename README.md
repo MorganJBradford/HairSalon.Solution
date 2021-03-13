@@ -27,7 +27,7 @@ ___
 
 ####  🖥️ View website:
 
-## Create Database with MySQL Workbench:
+1. Create Database with MySQL Workbench:
 
 * Open MySql, navigate to the administration tab (circled in the photo below), then double click on "Data Import/Restore" (see arrow in photo):
 ![img](README-files/admin-tab.JPG)
@@ -35,7 +35,7 @@ ___
 * A page called Data Import will open on MySQL Workbench. For _Import options_ select "Import from Self-Contained file", then select the file labeled "salon_db_structure.sql". This file will be in the top level of this projects directory. Next, in the _Default Schema to be Imported_ click the button "New...", you may name your scheme as you prefer, for the purposes of instruction mine is labeled hair_salon. When your view resembles the image below, select "Start Import" (circled in the photo below):
 ![img](README-files/select-file.JPG)
 
-## Connect Database to HairSalon.Solution
+2. Connect Database to HairSalon.Solution
 
 * Create a file named "appsettings.json" in the top level of the production directory 'HairSalon.Solution/HairSalon'. 
 **Uploading to your own repository**: If "appsettings.json" is is not grayed out like in the image below, you may need to commit the .gitignore file included in this project first. If using vscode and "appsettings.json" is not grayed out like in the photo below **do not upload your project**
@@ -43,15 +43,23 @@ ___
 
 * Navigate to your appsettings.json and paste the following template code:
 
-```{
+``{
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=[database_name];uid=root;pwd=[password];"
   }
-}```
+}
+``
 
-If you are using a server other than the default server, you will need to change the Port number. Otherwise, we will update the code to put in our database information and password. Replace [database_name] Again this is private and should be included in a .gitignore.
+If you are using a server other than the default server, you will need to change the Port number. Otherwise, we will update the code to put in our database information and password. Replace "\[database_name]" with the "hair_salon" and "\[password]" with your password. **Again this is private and should be included in a .gitignore.** The final result should look like the following:
 
-## Run Application
+``{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=hair_salon;uid=root;pwd=mydbpassword;"
+  }
+}
+``
+
+3. Run Application
 
 * From the top level directory enter 'cd HairSalon' in the command line.
 * Run the command 'dotnet restore' to download dependencies required to run the project.
